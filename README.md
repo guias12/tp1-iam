@@ -45,6 +45,13 @@ As subsequentes são considerávelmente mais rápidas.
 | `--nota-inicial` | 74 (Ré5) | altura midi da primeira nota |
 | `--nota-min` / `--nota-max` | 55 / 88 | faixa de alturas permitida |
 
+Além dos parâmetros gerados pelo agente, eu adicionei manualmente alguma opções adicionais, estas Sào:
+
+| Opção | Padrão | Descrição |
+|---|---|---|
+| `--forma` | livre | livre gera uma sequência única; aabb gera as partes A e B e repete (mais detalhes a seguir)
+| `--timbre` | quadrada | Forma da onda no arquivo mp3, pode ser quadrada ou triangular
+
 A mesma semente com os mesmos parâmetros gera arquivos idênticos.
 
 ### Rodar avaliação
@@ -79,6 +86,13 @@ Durante os sorteio são removidos os candidatos que:
 são FIM antes de completar os compassos, ultrapassam o tempo restante ou levam a altura para fora da faixa permitida.
 
 Nesses casos, O sorteio é refeito entre os candidatos restantes.
+
+Com o parametro `--forma aabb`, o programa gera a parte A com a semente informada e a parte B com a semente + 1.
+Em cada parte são aplicados dois ajustes:
+Ajuste para a escala de ré menor e a última nota da parte é trocada pelo Ré mais próximo, pra criar a sensação de conclusão 
+As partes são convertidas em notas e concatenadas na ordem A A B B.
+
+Prém, noo modo `livre` esses ajustes não são aplicados.
 
 ### Saída
 
