@@ -97,4 +97,14 @@ Prém, noo modo `livre` esses ajustes não são aplicados.
 ### Saída
 
 O MIDI usa timbre de violino.
-O MP3 é produzido por um sintetizador em Python (onda quadrada com pulso de 25%, de sonoridade retrô) e codificado com lameenc.
+O MP3 é produzido por um sintetizador em Python (onda quadrada com pulso de 25%, de sonoridade retrô, ou triangular caso o parametro seja fornecido) e codificado com lameenc.
+
+Vários exemplos que gerei enquanto brincava com a ferramenta estão na pasta `/exemplos`, disponíveis tanto em mp3 quanto o .mid
+
+
+### Uso de IA
+
+O scaffold do projeto foi feito com o Claude. O link para a conversa é:
+https://claude.ai/share/9d81e3c4-9994-4eb8-828d-2fe66bf951f9
+
+A base do projeto foi feita pelo agente, mas eu fiz alguns acréscimos, conforme foi citado acima
