@@ -1,0 +1,4 @@
+music21>=9.1
+numpy>=1.24
+matplotlib>=3.7
+lameenc>=1.7
